@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styles.css atau dalam komponen React yang menggunakan CSS-in-JS seperti styled-components */
+/* Gaya untuk scrollbar di seluruh halaman atau komponen */
+
+/* Webkit (Chrome, Safari, Opera) */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-color, #D9D9D9);
+  border-radius: 6px;
+  width: 100px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Firefox */
+/* Membuat scrollbar menjadi lebih lebar */
+* {
+  scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-color, #D9D9D9);
+  border-radius: 6px;
+  width: 100px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
